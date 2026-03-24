@@ -1,0 +1,13 @@
+Host *
+	IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+	IdentitiesOnly yes
+	IdentityFile ~/.ssh/gh-personal.pub
+
+Host GitHub
+	HostName github.com
+	User mvoitko
+
+Host bb-cc
+	HostName bitbucket.org
+	User maxvtk
+	IdentityFile ~/.ssh/bb-cc.pub

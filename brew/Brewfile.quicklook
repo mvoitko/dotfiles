@@ -1,0 +1,5 @@
+cask "qlstephen"
+cask "qlmarkdown"
+cask "qlcolorcode"
+cask "qlimagesize"
+cask "qlvideo"

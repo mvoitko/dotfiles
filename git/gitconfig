@@ -1,0 +1,68 @@
+[user]
+	name = Maksym Voitko
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICQroLuJxdnrZhqIwNozdeA+blf88uhqWH16Y1yd2ra0
+
+[gpg]
+	format = ssh
+
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+
+[commit]
+	gpgsign = true
+
+[push]
+	autoSetupRemote = true
+
+[core]
+	excludesfile = ~/.gitignore_global
+	trustctime = false
+	precomposeunicode = false
+	untrackedCache = true
+	whitespace = space-before-tab,-indent-with-non-tab,trailing-space
+	pager = bat --style=changes
+
+[apply]
+	whitespace = fix
+
+[http]
+	postBuffer = 2097152000
+
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+
+[alias]
+	l = log --pretty=oneline -n 20 --graph --abbrev-commit
+	p = pull --recurse-submodules
+	c = clone --recursive
+	s = status -sb
+	tags = tag -l
+	branches = branch --all
+	remotes = remote --verbose
+	contributors = shortlog --summary --numbered
+	whoami = config user.email
+	undo = reset --soft HEAD~1
+	amend = commit --amend --no-edit
+	wip = !git add -A && git commit -m 'WIP'
+
+[help]
+	autocorrect = 1
+
+[init]
+	defaultBranch = main
+
+[diff]
+	algorithm = histogram
+	colorMoved = default
+
+[merge]
+	conflictstyle = zdiff3
+
+[fetch]
+	prune = true
+
+[include]
+	path = ~/.gitconfig.local

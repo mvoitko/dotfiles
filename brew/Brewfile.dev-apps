@@ -1,0 +1,5 @@
+cask "ghostty"
+cask "visual-studio-code"
+cask "orbstack"
+cask "bruno"
+cask "tableplus"

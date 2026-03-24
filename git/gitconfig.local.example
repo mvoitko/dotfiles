@@ -1,0 +1,5 @@
+# Per-machine git overrides
+# Copy to ~/.gitconfig.local and customize
+
+[user]
+	email = your-email@example.com

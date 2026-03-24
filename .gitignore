@@ -1,0 +1,10 @@
+.DS_Store
+*.local
+!gitconfig.local.example
+.envrc
+brew/Brewfile.lock.json
+**/*.bak
+.claude/*
+!.claude/settings.json
+!.claude/hooks/
+!.claude/skills/

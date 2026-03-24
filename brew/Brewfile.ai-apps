@@ -1,0 +1,5 @@
+cask "claude"
+cask "chatgpt"
+cask "lm-studio"
+cask "ollama"
+cask "cursor"

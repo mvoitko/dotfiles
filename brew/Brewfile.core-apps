@@ -1,0 +1,6 @@
+cask "nikitabobko/tap/aerospace"
+cask "jordanbaird-ice"
+cask "karabiner-elements"
+cask "raycast"
+cask "1password"
+cask "1password-cli"

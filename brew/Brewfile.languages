@@ -1,0 +1,7 @@
+brew "pyenv"
+brew "pipx"
+brew "uv"
+brew "nvm"
+brew "pnpm"
+brew "go"
+brew "llama.cpp"

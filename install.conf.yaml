@@ -1,0 +1,69 @@
+- defaults:
+    link:
+      relink: true
+      create: true
+
+- clean: ['~', '~/.config']
+
+- create:
+    - ~/.config/zsh
+    - ~/.config/ghostty
+    - ~/.config/karabiner
+    - ~/.config/tmux
+    - ~/.local/bin
+
+- link:
+    # Shell
+    ~/.zshrc:
+      path: shell/zshrc
+      force: true
+    ~/.config/zsh/aliases.zsh: shell/zsh/aliases.zsh
+    ~/.config/zsh/exports.zsh: shell/zsh/exports.zsh
+    ~/.config/zsh/functions.zsh: shell/zsh/functions.zsh
+    ~/.config/zsh/keybindings.zsh: shell/zsh/keybindings.zsh
+    ~/.config/zsh/completions.zsh: shell/zsh/completions.zsh
+    ~/.config/zsh/plugins.zsh: shell/zsh/plugins.zsh
+    ~/.config/starship.toml: shell/starship.toml
+
+    # Git
+    ~/.gitconfig:
+      path: git/gitconfig
+      force: true
+    ~/.gitignore_global: git/gitignore_global
+
+    # SSH
+    ~/.ssh/config:
+      path: ssh/config
+      force: true
+
+    # Terminal
+    ~/.config/ghostty/config: terminal/ghostty/config
+    ~/.tmux.conf:
+      path: terminal/tmux/tmux.conf
+      force: true
+    ~/.config/tmux/tmux.conf.local:
+      path: terminal/tmux/tmux.conf.local
+      force: true
+
+    # Editor
+    ~/.editorconfig: .editorconfig
+    ~/Library/Application Support/Sublime Text/Packages/User/Preferences.sublime-settings:
+      path: editor/sublime/Preferences.sublime-settings
+      create: true
+    ~/Library/Application Support/Code/User/settings.json:
+      path: editor/vscode/settings.json
+      create: true
+    ~/Library/Application Support/Code/User/keybindings.json:
+      path: editor/vscode/keybindings.json
+      create: true
+
+    # Window Management
+    ~/.aerospace.toml: wm/aerospace.toml
+
+    # Keyboard
+    ~/.config/karabiner/karabiner.json:
+      path: keyboard/karabiner/karabiner.json
+      force: true
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]

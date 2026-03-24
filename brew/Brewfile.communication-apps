@@ -1,0 +1,7 @@
+cask "signal"
+cask "telegram"
+cask "slack"
+cask "whatsapp"
+cask "zoom"
+cask "discord"
+cask "loom"
