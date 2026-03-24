@@ -7,8 +7,10 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias projects="cd $HOME/Documents/projects"
 
-# Listing (use bat if available)
+# Listing
 command -v bat &>/dev/null && alias cat="bat --paging=never --plain"
+command -v eza &>/dev/null && alias ls="eza --icons" && alias ll="eza -la --icons --git" && alias tree="eza --tree --icons"
+command -v fd &>/dev/null && alias find="fd"
 alias grep="grep --color=auto"
 
 # Docker

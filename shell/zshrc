@@ -37,3 +37,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# zoxide (smarter cd)
+command -v zoxide &>/dev/null && eval "$(zoxide init zsh)"
