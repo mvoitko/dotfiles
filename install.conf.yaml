@@ -65,5 +65,12 @@
       path: keyboard/karabiner/karabiner.json
       force: true
 
+    # Claude Code
+    ~/.claude/settings.json:
+      path: claude/settings.json
+      force: true
+    ~/.claude/statusline-command.sh: claude/statusline-command.sh
+    ~/.claude/plugins/writing-council: claude/plugins/writing-council
+
 - shell:
     - [git submodule update --init --recursive, Installing submodules]

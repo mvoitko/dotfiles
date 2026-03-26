@@ -22,6 +22,7 @@ ALL_MODULES=(
   fonts
   omz
   dotbot
+  claude-code
   brew-apps
   macos
   aerospace
