@@ -23,7 +23,9 @@
     ~/.config/zsh/keybindings.zsh: shell/zsh/keybindings.zsh
     ~/.config/zsh/completions.zsh: shell/zsh/completions.zsh
     ~/.config/zsh/plugins.zsh: shell/zsh/plugins.zsh
-    ~/.config/starship.toml: shell/starship.toml
+    ~/.config/starship.toml:
+      path: shell/starship.toml
+      force: true
 
     # Git
     ~/.gitconfig:
@@ -50,9 +52,11 @@
     ~/Library/Application Support/Sublime Text/Packages/User/Preferences.sublime-settings:
       path: editor/sublime/Preferences.sublime-settings
       create: true
+      force: true
     ~/Library/Application Support/Code/User/settings.json:
       path: editor/vscode/settings.json
       create: true
+      force: true
     ~/Library/Application Support/Code/User/keybindings.json:
       path: editor/vscode/keybindings.json
       create: true
@@ -69,10 +73,14 @@
     ~/.claude/settings.json:
       path: claude/settings.json
       force: true
-    ~/.claude/statusline-command.sh: claude/statusline-command.sh
+    ~/.claude/statusline-command.sh:
+      path: claude/statusline-command.sh
+      force: true
     ~/.claude/hooks/notification-sound.sh: claude/hooks/notification-sound.sh
     ~/.claude/sounds/icq-uh-oh.mp3: claude/sounds/icq-uh-oh.mp3
-    ~/.claude/plugins/writing-council: claude/plugins/writing-council
+    ~/.claude/plugins/writing-council:
+      path: claude/plugins/writing-council
+      force: true
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
