@@ -70,6 +70,8 @@
       path: claude/settings.json
       force: true
     ~/.claude/statusline-command.sh: claude/statusline-command.sh
+    ~/.claude/hooks/notification-sound.sh: claude/hooks/notification-sound.sh
+    ~/.claude/sounds/icq-uh-oh.mp3: claude/sounds/icq-uh-oh.mp3
     ~/.claude/plugins/writing-council: claude/plugins/writing-council
 
 - shell:
