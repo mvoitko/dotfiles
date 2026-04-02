@@ -59,7 +59,15 @@ cp ~/Documents/projects/dotfiles/git/gitconfig.local.example ~/.gitconfig.local
 # Edit ~/.gitconfig.local with your email
 ```
 
-## 10. SSH Keys
+## 10. Vibe Island
+
+AI agent notch panel for macOS — monitors Claude Code, Codex, Gemini CLI, and Cursor with status, notifications, and permission controls.
+
+- Download from https://vibeisland.app/
+- Install the DMG and grant accessibility permissions
+- Zero-config: auto-detects running AI agents
+
+## 11. SSH Keys
 
 Your SSH keys are managed by 1Password. Ensure the following public keys exist in `~/.ssh/`:
 - `gh-personal.pub` — GitHub
